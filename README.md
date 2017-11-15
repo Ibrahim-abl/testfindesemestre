@@ -1,21 +1,5 @@
 # testfindesemestre
 
-> test de fin de semestre
+Un site internet regroupant divers fiches de jeux vidéos, avec des critiques/avis/nouveautés sur ces derniers, ainsi qu'une posibilité de suivre les actualités de certains d'entre eux. Il y aura une possibilité de creer un profil, de se connecter et de commenter les fiches. Pour ce site, nous allons utiliser Vue.js, Vuetify et Firebase. Ce projet sera réalisersur github afin de permettre une coopération optimale entre Ibrahim et moi.
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Ibrahim et moi même allons essayer de nous repartir les taches le plus équitablement possible.
