@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Home from '@/components/Jeux/Jeux'
-import Home from '@/components/Jeux/CreateJeux'
-import Home from '@/components/User/Profile'
-import Home from '@/components/User/Signin'
-import Home from '@/components/User/Signup'
+import jeux from '@/components/Jeux/jeux'
+import CreateJeux from '@/components/Jeux/CreateJeux'
+import Profile from '@/components/User/Profile'
+import Signin from '@/components/User/Signin'
+import Signup from '@/components/User/Signup'
 
 Vue.use(Router)
 
@@ -17,29 +17,30 @@ export default new Router({
       component: Home
     },
     {
-      path: '/jeux'
-      name: 'Jeux'
+      path: '/jeux',
+      name: 'Jeux',
       components: Jeux
     },
     {
-      path: '/jeux/new'
-      name: 'CreateJeux'
+      path: '/jeux/new',
+      name: 'CreateJeux',
       components: CreateJeux
     },
     {
-      path: '/profile'
-      name: 'Profile'
+      path: '/profile',
+      name: 'Profile',
       components: Profile
     },
     {
-      path: '/signup'
-      name: 'Signup'
+      path: '/signup',
+      name: 'Signup',
       components: Signup
     },
     {
-      path: '/signin'
-      name: 'Signin'
+      path: '/signin',
+      name: 'Signin',
       components: Signin
     },
-  ]
+  ],
+  mode: 'history'
 })
