@@ -6,6 +6,7 @@ import CreateJeux from '@/components/Jeux/CreateJeux'
 import Profile from '@/components/User/Profile'
 import Signin from '@/components/User/Signin'
 import Signup from '@/components/User/Signup'
+import jeu from '@/components/Jeux/jeu'
 
 Vue.use(Router)
 
@@ -19,27 +20,32 @@ export default new Router({
     {
       path: '/jeux',
       name: 'Jeux',
-      components: Jeux
+      component: Jeux
     },
     {
       path: '/jeux/new',
       name: 'CreateJeux',
-      components: CreateJeux
+      component: CreateJeux
+    },
+    {
+      path: '/jeu/:id',
+      name: 'jeu',
+      component: Jeux
     },
     {
       path: '/profile',
       name: 'Profile',
-      components: Profile
+      component: Profile
     },
     {
       path: '/signup',
       name: 'Signup',
-      components: Signup
+      component: Signup
     },
     {
       path: '/signin',
       name: 'Signin',
-      components: Signin
+      component: Signin
     },
   ],
   mode: 'history'
